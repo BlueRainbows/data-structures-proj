@@ -13,6 +13,7 @@ class Node:
 
 class Stack:
     """Класс для стека"""
+    list_stack = []
 
     def __init__(self):
         """Конструктор класса Stack"""
@@ -27,6 +28,7 @@ class Stack:
         next_node = self.top
         next_top = Node(data, next_node)
         self.top = next_top
+        self.list_stack.append(self.top)
 
     def pop(self):
         """
@@ -34,4 +36,4 @@ class Stack:
 
         :return: данные удаленного элемента
         """
-        return self.top.pop()
+        return self.list_stack.pop()
