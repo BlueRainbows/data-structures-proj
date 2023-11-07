@@ -18,5 +18,6 @@ class TestStack(unittest.TestCase):
         stacks.pop()
         self.assertEqual(len(stacks.list_stack), 1)
 
+
 if __name__ == '__main__':
     unittest.main()
